@@ -1,0 +1,59 @@
+<div class="main">
+    <div class="container-box">
+      <div class="main_content">
+        <form class="form validate-form flex-sb flex-w">
+          <span class="form-title" appDesign>
+            All Employee List
+          </span>
+
+          <div class="wrap">
+                <div class="search">
+                    <div class="box">
+                        <select name="filter" id="filter">
+                            <option disabled selected hidden>Choose Filter</option>
+                            <option>By Name</option>
+                            <option>By Employee Id</option>
+                            <option>By email</option>
+                            <option>By Phone number</option>
+                        </select>
+                    </div>
+                   <input type="text" class="searchTerm" placeholder="Want to search anyone..." id="searchItem">
+                    <span class="error error-username" id="span4">
+                      <span class="error-txt-username" id="span-filter">Please select from Filter first</span>
+                      <span class="error-txt-username" id="span-data">Please enter data</span>
+                    </span>
+                   <button (click)="searchEmployee()" type="submit" class="searchButton" name="Search" id="searchButton">Search</button>
+                </div>
+            </div>
+
+          <div class="employee">
+                <table id="table">
+                    <tr>
+                        <th>Name</th>
+                        <th>Employee Id</th>
+                        <th>Department</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr *ngFor="let x of records">
+                        <td>{{x.emp_name | modification:true:"Users"}}</td>
+                        <td>{{x.emp_id | modification:true:"Id"}}</td>
+                        <td>{{x.emp_dept}}</td>
+                        <td><button (click)="viewDetails($event)" class="button" type="submit" name={{x.emp_id}} value={{x.emp_id}} id={{x.emp_id}}><span>View</span></button></td>
+                    </tr>
+                </table>
+          </div>
+  
+          <div class="container-login100-form-btn ">
+            <button (click)="logout()" class="login100-form-btn" id="logout">
+              Log Out
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+    
+  
+  
+

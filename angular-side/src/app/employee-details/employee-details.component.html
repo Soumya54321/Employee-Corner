@@ -1,0 +1,32 @@
+
+<div class="main">
+    <div class="container-box">
+        <div class="main_content">
+            <div class="form validate-form flex-sb flex-w">
+                <span class="form-title" appDesign>
+                    {{ name | designName:true:"Name"}}
+                </span>
+        
+                <div class="employee">
+                    <table>
+                        <tr *ngFor="let key of arrayOfKeys">
+                            <th>{{key}}</th>
+                            <td *ngFor="let data of records">
+                                {{data[key]}}
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="container-login100-form-btn ">
+                    <button (click)="back()" class="login100-form-btn" id="back">
+                        Back to home
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+    

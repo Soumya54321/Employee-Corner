@@ -1,0 +1,117 @@
+<div class="main">
+    <div class="container-box">
+      <div class="main_content">
+        <form class="form validate-form flex-sb flex-w">
+          <span class="form-title">
+            Sign Up
+          </span>
+
+          <div class="text_inp">
+            <span class="txt1">
+              Name
+            </span>
+          </div>
+          <div class="wrap-input validate-input">
+            <input class="input100" type="text" name="name" maxlength="30" id="name">
+            <span class="focus-input100"></span>
+  
+            <span class="error error-username" id="span1">
+              <span class="error-txt-username" id="span-name">Please Enter Your Name</span>
+              <span class="error-img"><i class="fas fa-exclamation"></i></span>
+            </span>
+          </div>
+
+          <div class="text_inp">
+            <span class="txt1">
+              Employee Id
+            </span>
+          </div>
+          <div class="wrap-input validate-input">
+            <input class="input100" type="text" name="emp_id" maxlength="20" id="emp_id">
+            <span class="focus-input100"></span>
+  
+            <span class="error error-username" id="span2">
+              <span class="error-txt-username" id="span-id">Please Enter Your Employee ID</span>
+              <span class="error-img"><i class="fas fa-exclamation"></i></span>
+          </span>
+          </div>
+  
+          <div class="text_inp">
+            <span class="txt1">
+              Email/Mobile Number
+            </span>
+          </div>
+          <div class="wrap-input validate-input">
+            <input class="input100" type="text" name="number" maxlength="40" id="num_em">
+            <span class="focus-input100"></span>
+  
+            <span class="error error-username" id="span3">
+              <span class="error-txt-username" id="span-number">Please Enter A Valid Email/Mobile Number</span>
+              <span class="error-img"><i class="fas fa-exclamation"></i></span>
+          </span>
+          </div>
+  
+          <div class="text_inp">
+            <span class="txt1">
+              Choose Department
+            </span>
+          </div>
+          <div class="box">
+            <select name="dept" id="dept">
+                <option disabled selected hidden>Departments</option>
+                <option>Accounts and Finance</option>
+                <option>HR</option>
+                <option>Sales and marketing</option>
+                <option>Infrastructures</option>
+                <option>Research and development</option>
+                <option>Product development</option>
+                <option>Admin department</option>
+                <option>Security and transport</option>
+            </select>
+            <span class="focus-input100"></span>
+  
+            <span class="error error-username" id="span4">
+              <span class="error-txt-username" id="span-dept">Please Select Your Department</span>
+              <span class="error-img"><i class="fas fa-exclamation"></i></span>
+          </span>
+          </div>
+
+          <div class="text_inp">
+            <span class="txt1">
+              Password
+            </span>
+          </div>
+          <div class="wrap-input validate-input">
+            <input class="input100" type="password" name="password" placeholder="Atleast 8 characters" maxlength="15" id="password">
+            <span class="focus-input100"></span>
+  
+            <span class="error error-username" id="span5">
+              <span class="error-txt-username" id="span-password">Please Enter Password</span>
+              <span class="error-img"><i class="fas fa-exclamation"></i></span>
+          </span>
+          </div>
+  
+          <div class="container-login100-form-btn ">
+            <button (click)="registerUser()" class="login100-form-btn" type="button" id="submit">
+              Sign Up
+            </button>
+          </div>
+  
+          <div class="w-full text-center p-t-55">
+            <span class="txt2">
+              Already have an account?
+            </span>
+  
+            <a href="http://localhost:4200//login" class="txt2 bo1">
+              Sign in now
+            </a>
+          </div>
+        
+        </form>
+      </div>
+    </div>
+  </div>
+    
+  
+  
+
